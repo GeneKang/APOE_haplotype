@@ -82,8 +82,8 @@ while($line=<IN>){
 	#CGCCTGGCAGTGTACCAGGC
 	if($fq2=~/CGCGGACATGGAGGACGTGT/ ||$fq2=~/GGAGGACGTGTGCGGCCGCCT/ ||$fq2=~/TGCGGCCGCCTGGTGCAGTA/ ||$fq2=~/TGCCGATGACCTGCAGAAGC/ ||$fq2=~/CCTGCAGAAGCGCCTGGCAGT/ ||$fq2=~/CGCCTGGCAGTGTACCAGGC/){
 		 
-		my $aa=system("perl /mnt2/mqj/localalignment_sw.pl $seq  $fq2 >$outdir/tmp");
-		my $bb=system("perl /mnt2/mqj/localalignment_sw.pl $seq2 $fq2 >$outdir/tmp2");
+		my $aa=system("perl smith-waterman_algorithm.pl $seq  $fq2 >$outdir/tmp");
+		my $bb=system("perl smith-waterman_algorithm.pl $seq2 $fq2 >$outdir/tmp2");
 		#print "$aa\n";
 		
 		if(-z "$outdir/tmp"){
