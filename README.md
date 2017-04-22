@@ -6,5 +6,5 @@ Features:
 2. Easy to use and run.
 
 Examples:   
-perl  APOE_haplotype.pl  sample.fastq.gz  outdir   outfile
+perl    APOE_haplotype.pl    sample.fastq.gz    outdir    outfile
 
