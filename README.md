@@ -1,6 +1,7 @@
 APOE haplotype estimation from Fastq files directly (.fq, .fq.gz, ), NO BAM or SAM format.
 
 Examples:
+
 perl  APOE_haplotype.pl  sample.fastq.gz  outdir   outfile
 
 Features:
