@@ -7,3 +7,4 @@ Features:
 
 Examples:
 perl  APOE_haplotype.pl  sample.fastq.gz  outdir   outfile
+
